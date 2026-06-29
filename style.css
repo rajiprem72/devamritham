@@ -254,52 +254,36 @@ body{
 }
 
 /* ---------- DARK MODE ---------- */
-
 @media (prefers-color-scheme:dark){
 
 body{
-    background:#121212;
-    color:#e6e6e6;
+
+background:#121212;
+color:#f5f5f5;
+
 }
 
-h1,h2,h3,h4,h5,h6{
-    color:#fff;
+.card{
+
+background:#ffffff;
+color:#333;
+
 }
 
-a{
-    color:#64B5F6;
+.card p{
+
+color:#444;
+
 }
 
-blockquote{
-    background:#1d1d1d;
-    border-left-color:#64B5F6;
+.card h2,
+.card h3{
+
+color:#2E7D32;
+
 }
 
-th{
-    background:#202020;
 }
-
-td,th{
-    border-color:#444;
-}
-
-code{
-    background:#2b2b2b;
-}
-
-hr{
-    border-top-color:#444;
-}
-
-input,
-select,
-textarea{
-    background:#1f1f1f;
-    color:#fff;
-    border-color:#444;
-}
-}
-
 
 /* =====================================
    VIDEO GALLERY
@@ -509,13 +493,31 @@ transition:.3s;
 }
 
 .card{
-    background:#fff;
+    background:#ffffff;
+    color:#333;
     border-radius:15px;
     padding:25px;
     box-shadow:0 8px 25px rgba(0,0,0,.08);
     margin-bottom:25px;
-    transition:0.3s;
+    transition:.3s;
 }
+
+.card h2,
+.card h3,
+.card h4{
+    color:#2E7D32;
+}
+
+.card p{
+    color:#444;
+    line-height:1.8;
+}
+
+.card a{
+    color:#1976D2;
+}
+
+
 
 .card:hover{
     transform:translateY(-5px);
