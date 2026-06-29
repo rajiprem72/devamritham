@@ -1,0 +1,301 @@
+/* ==========================================================
+   Global Mobile-First Typography & Content Stylesheet
+   Version: 1.0
+   Suitable for blogs, AI content, documentation, articles,
+   Tarot Shakti, Divine Connectionz and general web pages.
+   ========================================================== */
+
+/* ---------- RESET ---------- */
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+html{
+    font-size:16px;
+    scroll-behavior:smooth;
+    -webkit-text-size-adjust:100%;
+}
+
+body{
+    margin:0;
+    padding:16px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans Tamil",sans-serif;
+    font-size:1rem;
+    line-height:1.75;
+    color:#222;
+    background:#fff;
+    text-rendering:optimizeLegibility;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+}
+
+/* ---------- HEADINGS ---------- */
+
+h1,h2,h3,h4,h5,h6{
+    margin:1.5em 0 .6em;
+    font-weight:700;
+    line-height:1.3;
+    color:#111;
+}
+
+h1{font-size:2rem;}
+h2{font-size:1.75rem;}
+h3{font-size:1.5rem;}
+h4{font-size:1.3rem;}
+h5{font-size:1.15rem;}
+h6{font-size:1rem;}
+
+h1:first-child,
+h2:first-child,
+h3:first-child{
+    margin-top:0;
+}
+
+/* ---------- PARAGRAPHS ---------- */
+
+p{
+    margin:0 0 18px;
+    font-size:1rem;
+}
+
+/* ---------- LINKS ---------- */
+
+a{
+    color:#1565C0;
+    text-decoration:none;
+    font-weight:500;
+    transition:.2s ease;
+}
+
+a:hover{
+    color:#0D47A1;
+    text-decoration:underline;
+}
+
+/* ---------- LISTS ---------- */
+
+ul,ol{
+    margin:18px 0;
+    padding-left:24px;
+}
+
+li{
+    margin-bottom:10px;
+    line-height:1.7;
+}
+
+li p{
+    margin-bottom:8px;
+}
+
+/* ---------- BLOCKQUOTE ---------- */
+
+blockquote{
+    margin:20px 0;
+    padding:14px 18px;
+    border-left:4px solid #2196F3;
+    background:#f8f9fa;
+    font-style:italic;
+    border-radius:6px;
+}
+
+/* ---------- IMAGES ---------- */
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:20px auto;
+    border-radius:8px;
+}
+
+/* ---------- VIDEO ---------- */
+
+video,
+iframe{
+    width:100%;
+    max-width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    border-radius:10px;
+}
+
+/* ---------- TABLE ---------- */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;
+    display:block;
+    overflow-x:auto;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:left;
+}
+
+th{
+    background:#f5f5f5;
+    font-weight:600;
+}
+
+/* ---------- CODE ---------- */
+
+code{
+    background:#f4f4f4;
+    padding:2px 6px;
+    border-radius:4px;
+    font-family:Consolas,Monaco,monospace;
+}
+
+pre{
+    background:#272822;
+    color:#fff;
+    padding:14px;
+    border-radius:8px;
+    overflow:auto;
+}
+
+pre code{
+    background:none;
+    padding:0;
+    color:inherit;
+}
+
+/* ---------- INLINE ELEMENTS ---------- */
+
+strong{font-weight:700;}
+em{font-style:italic;}
+small{font-size:.9rem;}
+sup,sub{font-size:70%;}
+mark{background:#FFF59D;}
+kbd{
+    background:#333;
+    color:#fff;
+    padding:2px 6px;
+    border-radius:4px;
+}
+hr{
+    border:none;
+    border-top:1px solid #ddd;
+    margin:30px 0;
+}
+
+/* ---------- FORMS ---------- */
+
+input,
+select,
+textarea,
+button{
+    font:inherit;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:16px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    padding:14px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ---------- SPACING ---------- */
+
+p+p{
+    margin-top:18px;
+}
+
+/* ---------- SELECTION ---------- */
+
+::selection{
+    background:#1976D2;
+    color:#fff;
+}
+
+/* ---------- TABLETS ---------- */
+
+@media (min-width:768px){
+
+body{
+    max-width:760px;
+    margin:auto;
+    padding:24px;
+    font-size:18px;
+}
+
+h1{font-size:2.4rem;}
+h2{font-size:2rem;}
+h3{font-size:1.7rem;}
+h4{font-size:1.4rem;}
+h5{font-size:1.2rem;}
+}
+
+/* ---------- DESKTOP ---------- */
+
+@media (min-width:1200px){
+
+body{
+    max-width:900px;
+    padding:32px;
+}
+}
+
+/* ---------- DARK MODE ---------- */
+
+@media (prefers-color-scheme:dark){
+
+body{
+    background:#121212;
+    color:#e6e6e6;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:#fff;
+}
+
+a{
+    color:#64B5F6;
+}
+
+blockquote{
+    background:#1d1d1d;
+    border-left-color:#64B5F6;
+}
+
+th{
+    background:#202020;
+}
+
+td,th{
+    border-color:#444;
+}
+
+code{
+    background:#2b2b2b;
+}
+
+hr{
+    border-top-color:#444;
+}
+
+input,
+select,
+textarea{
+    background:#1f1f1f;
+    color:#fff;
+    border-color:#444;
+}
+}
