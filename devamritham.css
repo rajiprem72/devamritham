@@ -1,0 +1,72 @@
+/* ==================================================
+   DEVAMRITHAM WEBSITE
+   ================================================== */
+
+:root{
+    --primary:#2E7D32;
+    --secondary:#66BB6A;
+    --accent:#C8E6C9;
+    --gold:#D4AF37;
+    --light:#F8FFF8;
+    --dark:#1B5E20;
+}
+
+body{
+    background:#FAFFFA;
+}
+
+.hero{
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(135deg,#E8F5E9,#FFFFFF);
+}
+
+.hero h1{
+    color:var(--dark);
+}
+
+.btn-primary{
+    display:inline-block;
+    padding:14px 28px;
+    background:var(--primary);
+    color:#fff;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-primary:hover{
+    background:var(--dark);
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    padding:20px;
+    margin-bottom:25px;
+}
+
+.section-title{
+    color:var(--primary);
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+@media(min-width:768px){
+.video-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(min-width:1100px){
+.video-grid{
+grid-template-columns:repeat(3,1fr);
+}
+}
