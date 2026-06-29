@@ -1,90 +1,687 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Devamritham | Supporting Health. Inspiring Wellness.</title>
+
+<meta name="description"
+content="Devamritham is a wellness information platform sharing customer wellness experiences, educational resources and nutritional supplement information.">
+
+<meta name="keywords"
+content="Devamritham, wellness, nutrition, healthy lifestyle, Rightway Health, wellness stories">
+
+<meta name="author"
+content="Devamritham">
+
+<meta name="theme-color"
+content="#2E7D32">
+
+<meta property="og:title"
+content="Devamritham">
+
+<meta property="og:description"
+content="Supporting Health. Inspiring Wellness.">
+
+<meta property="og:image"
+content="banner.png">
+
+<meta property="og:type"
+content="website">
+
+<link rel="icon" href="logo.png">
+
 <link rel="stylesheet" href="style.css">
-</head>  
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+<script defer src="script.js"></script>
+
+<style>
+
+/************************************************
+HEADER
+************************************************/
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:#ffffff;
+box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+nav{
+
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 20px;
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:12px;
+
+}
+
+.logo img{
+
+width:60px;
+height:60px;
+object-fit:contain;
+
+}
+
+.logo h2{
+
+margin:0;
+color:#2E7D32;
+font-size:1.5rem;
+
+}
+
+.nav-links{
+
+display:flex;
+gap:25px;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+color:#333;
+font-weight:600;
+
+}
+
+.nav-links a:hover{
+
+color:#2E7D32;
+
+}
+
+.menu-toggle{
+
+display:none;
+font-size:30px;
+cursor:pointer;
+
+}
+
+/********************************************
+HERO
+********************************************/
+
+.hero{
+
+padding:30px 15px;
+text-align:center;
+background:#F5FFF6;
+
+}
+
+.hero-banner{
+
+width:100%;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.hero h1{
+
+color:#1B5E20;
+margin-top:30px;
+
+}
+
+.hero p{
+
+max-width:900px;
+margin:auto;
+
+}
+
+.hero-buttons{
+
+margin-top:30px;
+
+}
+
+.hero-buttons a{
+
+display:inline-block;
+margin:10px;
+padding:14px 28px;
+border-radius:30px;
+background:#2E7D32;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.hero-buttons a:hover{
+
+background:#1B5E20;
+transform:translateY(-3px);
+
+}
+
+/********************************************
+MOBILE
+********************************************/
+
+@media(max-width:768px){
+
+.menu-toggle{
+
+display:block;
+
+}
+
+.nav-links{
+
+display:none;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:white;
+flex-direction:column;
+padding:20px;
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+.logo h2{
+
+font-size:1.1rem;
+
+}
+
+}
+
+</style>
+
+</head>
+
 <body>
 
-<section class="card">
-  <h2>How this helps</h2>
-  <ul>
-    <li>Supports nutritional recovery after long-term illness and treatment.</li>
-    <li>Formulated to help restore energy, immunity, and general wellbeing.</li>
-    <li>Used alongside prescribed medical treatment — not a substitute for professional medical advice.</li>
-  </ul>
+<header>
+
+<nav>
+
+<div class="logo">
+
+<img src="logo.png" alt="Devamritham Logo">
+
+<h2>DEVAMRITHAM</h2>
+
+</div>
+
+<div class="menu-toggle">
+
+☰
+
+</div>
+
+<div class="nav-links">
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#gallery">Testimonials</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero fade-in" id="home">
+
+<img
+src="banner.png"
+alt="Devamritham Banner"
+class="hero-banner">
+
+<h1>
+
+Supporting Health.
+<br>
+Inspiring Wellness.
+
+</h1>
+
+<p>
+
+Welcome to <strong>Devamritham</strong>, a wellness information platform dedicated to sharing educational resources, customer wellness experiences, and information about nutritional supplements marketed by Rightway Health International Private Ltd.
+
+Our goal is to help visitors learn more about healthy living through inspiring stories and wellness-focused information.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#gallery">
+
+<i class="fas fa-play-circle"></i>
+
+Watch Testimonials
+
+</a>
+
+<a href="#contact">
+
+<i class="fas fa-phone"></i>
+
+Contact Us
+
+</a>
+
+</div>
+
 </section>
 
-<section class="card">
-  <h2>Testimonial Gallery</h2>
-  <p>Real people, real recoveries — below are short video testimonials (vertical 9:16 format). Click a video to play. Captions highlight each speaker’s condition and outcome.</p>
 
-  <div class="grid">
-    <div class="testimonial">
-      <figure class="video-figure">
-        <!-- Replace src with the correct path if videos are in a subfolder -->
-        <video controls poster="" width="100%" height="100%" style="object-fit:cover;">
-          <source src="videos/video1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </figure>
-      <div class="caption">Video1.mp4 — Recovered energy and mobility after stroke; shares treatment timeline and improvements.</div>
+
+<!-- ==========================================
+     ABOUT DEVAMRITHAM
+=========================================== -->
+
+<section id="about" class="fade-in">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            🌿 Welcome to Devamritham
+        </h2>
+
+        <p>
+            At <strong>Devamritham</strong>, we believe that good health begins with informed choices,
+            proper nutrition and a positive lifestyle.
+        </p>
+
+        <p>
+            This website has been created to share educational information about nutritional
+            supplements, customer wellness experiences and inspiring stories from individuals
+            who have chosen to include these products as part of their personal wellness journey.
+        </p>
+
+        <p>
+            We encourage visitors to explore the experiences shared on this website and consult
+            qualified healthcare professionals for medical advice regarding their individual health needs.
+        </p>
+
     </div>
 
-    <div class="testimonial">
-      <figure class="video-figure">
-        <video controls poster="" width="100%" height="100%" style="object-fit:cover;">
-          <source src="videos/video2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </figure>
-      <div class="caption">Video2.mp4 — Long-term dialysis patient reports increased strength and reduced complications.</div>
-    </div>
-
-    <div class="testimonial">
-      <figure class="video-figure">
-        <video controls poster="" width="100%" height="100%" style="object-fit:cover;">
-          <source src="videos/video3.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </figure>
-      <div class="caption">Video3.mp4 — Family member describes cancer recovery support and improved appetite.</div>
-    </div>
-
-    <div class="testimonial">
-      <figure class="video-figure">
-        <video controls poster="" width="100%" height="100%" style="object-fit:cover;">
-          <source src="videos/video4.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </figure>
-      <div class="caption">Video4.mp4 — Overcame chronic skin condition (psoriasis) with combined treatment; shows before/after progress.</div>
-    </div>
-
-    <div class="testimonial">
-      <figure class="video-figure">
-        <video controls poster="" width="100%" height="100%" style="object-fit:cover;">
-          <source src="videos/ideo5.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </figure>
-      <div class="caption">Video5.mp4 — Paralysis recovery: improvements in movement and daily activities after supplement support.</div>
-    </div>
-
-  </div>
 </section>
 
-<section class="card">
-  <h2>Important</h2>
-  <p>Devamritham shares genuine testimonials from people who have used products from Rightway Health International Private Ltd. These accounts are individual experiences and results may vary; supplements are intended to support health and are not a replacement for medical treatment. For more product specifics, legal information, and official guidance, please consult Rightway Health International Private Ltd directly.</p>
+<!-- ==========================================
+     WHY CHOOSE DEVAMRITHAM
+=========================================== -->
+
+<section class="fade-in">
+
+    <h2 class="section-title">
+
+        Why Choose Devamritham?
+
+    </h2>
+
+    <div class="feature-grid">
+
+        <div class="card">
+
+            <i class="fas fa-seedling fa-3x"></i>
+
+            <h3>Natural Wellness</h3>
+
+            <p>
+
+                Learn about nutritional supplements designed to support
+                everyday wellness and a healthy lifestyle.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-heart fa-3x"></i>
+
+            <h3>Customer Experiences</h3>
+
+            <p>
+
+                Watch inspiring wellness stories shared by customers
+                about their personal experiences.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-book-open fa-3x"></i>
+
+            <h3>Educational Resources</h3>
+
+            <p>
+
+                Understand the importance of nutrition,
+                healthy living and informed wellness choices.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-handshake fa-3x"></i>
+
+            <h3>Personal Guidance</h3>
+
+            <p>
+
+                Connect with our team to learn more about the products,
+                customer experiences and wellness information.
+
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section class="card">
-  <h2>Contact</h2>
-  <p>If you’d like more information or help ordering, contact:</p>
-  <p style="margin:6px 0;"><strong>T. L. Suresh</strong><br/>Vandiyur, Madurai - 625020<br/>Mobile: <a href="tel:+919789707642">97897 07642</a><br/>Email: <a href="mailto:tlsuresh13@gmail.com">tlsuresh13@gmail.com</a></p>
-  <p>For company information and product specifications visit <a href="https://rightwayglobal.in" target="_blank" rel="noopener noreferrer">Rightway Health International Pvt Ltd</a>.</p>
+<!-- ==========================================
+     ABOUT RIGHTWAY HEALTH
+=========================================== -->
+
+<section class="fade-in">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            About Rightway Health
+
+        </h2>
+
+        <p>
+
+            Devamritham shares information about nutritional supplements
+            marketed by <strong>Rightway Health International Private Ltd.</strong>
+
+        </p>
+
+        <p>
+
+            Through this platform, visitors can learn more about the company's
+            wellness products and explore customer experiences that highlight
+            individual wellness journeys.
+
+        </p>
+
+        <p>
+
+            For official product information, company details and additional
+            resources, please visit:
+
+        </p>
+
+        <p style="text-align:center;">
+
+            <a href="https://rightwayglobal.in"
+               target="_blank"
+               class="btn-primary">
+
+                Visit Rightway Health Website
+
+            </a>
+
+        </p>
+
+    </div>
+
 </section>
-  
+
+<!-- ==========================================
+     WELLNESS MESSAGE
+=========================================== -->
+
+<section class="fade-in">
+
+    <div class="card">
+
+        <h2 class="section-title">
+
+            Our Mission
+
+        </h2>
+
+        <p style="text-align:center;">
+
+            To inspire healthier lives by providing reliable wellness
+            information, encouraging informed decisions and sharing
+            authentic customer experiences in a respectful and
+            responsible manner.
+
+        </p>
+
+    </div>
+
+</section>
+
+/* =====================================
+   VIDEO GALLERY
+===================================== */
+
+.video-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.video-grid video{
+
+width:100%;
+border-radius:12px;
+background:#000;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+.video-grid .card{
+
+text-align:center;
+
+}
+
+.video-grid h3{
+
+margin-top:20px;
+color:#2E7D32;
+
+}
+
+<!-- ==========================================
+     CONTACT
+=========================================== -->
+
+<section id="contact" class="fade-in">
+
+    <h2 class="section-title">
+
+        Contact Us
+
+    </h2>
+
+    <div class="card">
+
+        <h3>
+
+            T. L. Suresh
+
+        </h3>
+
+        <p>
+
+            <i class="fas fa-location-dot"></i>
+
+            Vandiyur,<br>
+            Madurai - 625020
+
+        </p>
+
+        <p>
+
+            <i class="fas fa-phone"></i>
+
+            <a href="tel:+919789707642">
+
+                +91 97897 07642
+
+            </a>
+
+        </p>
+
+        <p>
+
+            <i class="fas fa-envelope"></i>
+
+            <a href="mailto:tlsuresh13@gmail.com">
+
+                tlsuresh13@gmail.com
+
+            </a>
+
+        </p>
+
+        <p>
+
+            We would be happy to answer your questions and guide you
+            to the appropriate wellness information.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     FOOTER
+=========================================== -->
+
+<footer>
+
+<div class="footer-content">
+
+<img src="logo.png"
+width="80"
+alt="Devamritham">
+
+<h3>
+
+DEVAMRITHAM
+
+</h3>
+
+<p>
+
+Supporting Health. Inspiring Wellness.
+
+</p>
+
+<p>
+
+© <span id="currentYear"></span>
+
+Devamritham.
+
+All Rights Reserved.
+
+</p>
+
+<p>
+
+The information on this website is provided for educational
+purposes only.
+
+Customer experiences are personal in nature and individual
+results may vary.
+
+Always seek advice from a qualified healthcare professional
+regarding any medical condition.
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- ==========================================
+     FLOATING WHATSAPP
+=========================================== -->
+
+<a
+href="https://wa.me/919789707642"
+class="floating-whatsapp"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- ==========================================
+     FLOATING CALL
+=========================================== -->
+
+<a
+href="tel:+919789707642"
+class="floating-call">
+
+<i class="fas fa-phone"></i>
+
+</a>
+
+<!-- ==========================================
+     BACK TO TOP
+=========================================== -->
+
+<button
+id="topButton"
+onclick="scrollToTop()">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
 </body>
-  
- <script src="script.js"></script>
+
 </html>
