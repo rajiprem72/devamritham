@@ -301,6 +301,64 @@ textarea{
 }
 
 
+/* =====================================
+   VIDEO GALLERY
+===================================== */
+
+.video-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.video-grid .card{
+
+    text-align:center;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.video-grid video{
+
+    width:100%;
+
+    aspect-ratio:9/16;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    background:#000;
+
+}
+
+.video-grid h3{
+
+    margin-top:18px;
+
+    color:#2E7D32;
+
+}
+
+.video-grid p{
+
+    font-size:15px;
+
+}
+
 /*=========================================
 FOOTER
 =========================================*/
@@ -327,6 +385,78 @@ margin:auto;
 margin:auto;
 margin-bottom:20px;
 
+}
+
+
+/* =====================================
+   COMMON LAYOUT
+===================================== */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.section-title{
+    text-align:center;
+    color:#2E7D32;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    margin-bottom:25px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.feature-grid .card{
+    text-align:center;
+}
+
+.feature-grid i{
+    color:#2E7D32;
+    margin-bottom:20px;
+}
+
+.btn-primary{
+    display:inline-block;
+    padding:14px 28px;
+    background:#2E7D32;
+    color:#fff;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-primary:hover{
+    background:#1B5E20;
+}
+
+.fade-in{
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .8s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
 }
 
 /*=========================================
