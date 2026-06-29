@@ -1,0 +1,120 @@
+<html>
+<head>
+<style>
+  .testimonial-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+  }
+
+  .testimonial-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    background: #000;
+  }
+
+  .video-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .testimonial-caption {
+    padding: 14px 14px 16px;
+  }
+
+  .testimonial-caption h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    color: #222;
+  }
+
+  .testimonial-caption p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 600px) {
+    .testimonial-section {
+      padding: 14px;
+    }
+
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+
+
+<section class="testimonial-section">
+  <h2>Testimonial Gallery</h2>
+
+  <div class="testimonial-grid">
+    <article class="testimonial-card">
+      <div class="video-wrap">
+        <video controls playsinline webkit-playsinline preload="metadata" poster="videos/video1-poster.jpg">
+          <source src="videos/video1.mp4#t=0.001" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="testimonial-caption">
+        <h3>Video 1</h3>
+        <p>Patient shares their experience and recovery journey after long-term illness.</p>
+      </div>
+    </article>
+
+    <article class="testimonial-card">
+      <div class="video-wrap">
+        <video controls playsinline webkit-playsinline preload="metadata" poster="videos/video2-poster.jpg">
+          <source src="videos/video2.mp4#t=0.001" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="testimonial-caption">
+        <h3>Video 2</h3>
+        <p>Family testimonial describing improved strength, comfort, and daily routine.</p>
+      </div>
+    </article>
+
+    <article class="testimonial-card">
+      <div class="video-wrap">
+        <video controls playsinline webkit-playsinline preload="metadata" poster="videos/video3-poster.jpg">
+          <source src="videos/video3.mp4#t=0.001" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="testimonial-caption">
+        <h3>Video 3</h3>
+        <p>Short story from a customer explaining their support experience and results.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+</body>
+</html>
