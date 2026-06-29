@@ -531,3 +531,12 @@ transition:.3s;
     opacity:1;
     transform:translateY(0);
 }
+
+#gallery{
+
+background:#f5fff5;
+
+padding:60px 20px;
+
+}
+
