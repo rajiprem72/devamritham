@@ -70,3 +70,40 @@ grid-template-columns:repeat(2,1fr);
 grid-template-columns:repeat(3,1fr);
 }
 }
+
+
+.status-active{
+
+    color:#2E7D32;
+    font-weight:bold;
+
+}
+
+.status-coming{
+
+    color:#ff9800;
+    font-weight:bold;
+
+}
+
+.feature-grid .card{
+
+    text-align:center;
+    min-height:340px;
+
+}
+
+.feature-grid .card i{
+
+    color:#2E7D32;
+    margin-bottom:20px;
+
+}
+
+.feature-grid .btn-primary{
+
+    margin-top:15px;
+    display:inline-block;
+
+}
+
